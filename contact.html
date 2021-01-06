@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- FORM VALIDATION FIELD -->
+  <h2>Contact Information</h2>
+  <p><code><!--code for vaildation--></code></p>
+  <form action="/action_page.php" class="was-validated">
+
+    <!--FIRST NAME FIELD -->
+    <div class="form-group">
+      <label for="fname">First Name:</label>
+      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <!-- LAST NAME FIELD -->
+    <div class="form-group">
+      <label for="lname">Last Name:</label>
+      <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <!-- EMAIL FIELD -->
+    <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      
+      <!-- SUBJECT FIELD -->
+      <div class="form-group">
+        <label for="subject">Subject: </label>
+        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+
+    <!-- MESAGE FIELD -->
+    <div>
+        <form>
+          <div class="form-group">
+            <label for="comment">Message: </label>
+            <textarea class="form-control" rows="7" id="message" name="message"></textarea>
+          </div>
+        </form>
+      </div>
+
+    <!-- BUTTON NEED TO CENTER THE FIELD -->
+    <div class="text-center">
+    <button action="" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+</div>
+</body>
+</html>
